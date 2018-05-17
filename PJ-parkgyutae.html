@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title> Project</title>
+
+<style>
+   *{box-sizing:border-box;}
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+
+@media only screen and (max-width: 900px) {
+	.col-v-1 {width: 8.33%;}
+    .col-v-2 {width: 16.66%;}
+    .col-v-3 {width: 25%;}
+    .col-v-4 {width: 33.33%;}
+    .col-v-5 {width: 41.66%;}
+    .col-v-6 {width: 50%;}
+    .col-v-7 {width: 58.33%;}
+    .col-v-8 {width: 66.66%;}
+    .col-v-9 {width: 75%;}
+    .col-v-10 {width: 83.33%;}
+    .col-v-11 {width: 91.66%;}
+    .col-v-12 {width: 100%;}
+
+    }
+
+    @media only screen and (max-width: 400px) {
+
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    }
+
+    [class*="col-"]{
+    	float:left;
+    	padding:10px;
+    	border:2px solid white;
+    }
+
+.container{
+	border:5px solid black;
+	height:1000px; /* add this line */
+	background-color:DodgerBlue;
+	margin-right:auto;
+	margin-left:auto;
+}
+h1{
+	background-color:yellow;
+	text-align:center;
+	width:100%;
+	font-size:400%;
+	font-style:italic;
+}
+h2{
+	width:100%;
+	text-align:right;
+	font-size:200%;
+	float:right;
+	font-style:oblique;
+}
+img{
+	float:right;
+}
+
+.col200{float:left;}
+.col300{width:70%;font-size:150%;text-align:left;float:left;}
+.col400{font-style:Serif;font-size:130%;text-align:left;padding-left:20px;float:left;}
+.col100{width:30%;font-size:150%;text-align:left;float:left;}
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>RESUME</h1>
+		<h2>Name: Park Gyu Tae</h2>
+        <div class="row">
+        	<div class="col-9 col-v-9 col-s-9">
+		    <div class="col300">
+    			<div class="col-6 col-v-4 col-s-4"><strong>YEAR</strong>:20</div>
+    			<div class="col-6 col-v-8 col-s-8"><strong>COUNTRY</strong>:Korea</div>
+    			<div class="col-12 col-v-12 col-s-12"><strong>JOB</strong>:university student(March 2018-Currently)</div>
+    			<div class="col-6 col-v-6 col-s-6"><strong>MAJOR</strong>:IT engineering</div>
+    			<div class="col-6 col-v-6 col-s-6"><strong>HOBBY</strong>:Using computer</div>
+    			<div class="col-12 col-v-12 col-s-12"><strong>EMAIL</strong>:ddh0600@naver.com</div>
+    			<div class="col-12 col-v-12 col-s-12"><strong>Phone Number</strong>:010-5180-5317</div>
+    			<div class="col-12 col-v-12 col-s-12">Family Member</div>
+    			<div class="col-4 col-v-4 col-s-4"><a>Father</a></div>
+                <div class="col-4 col-v-4 col-s-4"><a>Mother</a></div>
+                <div class="col-4 col-v-4 col-s-4"><a>Sister</a></div>
+            </div>
+            <div ><img src="kitten1.jpg" alt="cannot find"></div>
+            </div>                
+           
+	</div>
+    <div class="col400 col-3 col-v-3 col-s-3">
+    	<p>I was interested in programming in high school.</p>
+    	<p>I attending Daegu Catholic University and I studied programming</p>
+    	<p>My dream is game programmer. I want to make the game, and I want to play the game with my family or friends what I programmed.</p>
+    </div>
+</div>
+
+</body>
+</html>
