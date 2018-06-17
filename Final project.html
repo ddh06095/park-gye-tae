@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+	<title> Final project </title>
+	<meta charset="utf-8">
+	<style>
+	<style>
+   *{box-sizing:border-box;}
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+
+@media only screen and (max-width: 400px) {
+	.col-v-1 {width: 8.33%;}
+    .col-v-2 {width: 16.66%;}
+    .col-v-3 {width: 25%;}
+    .col-v-4 {width: 33.33%;}
+    .col-v-5 {width: 41.66%;}
+    .col-v-6 {width: 50%;}
+    .col-v-7 {width: 58.33%;}
+    .col-v-8 {width: 66.66%;}
+    .col-v-9 {width: 75%;}
+    .col-v-10 {width: 83.33%;}
+    .col-v-11 {width: 91.66%;}
+    .col-v-12 {width: 100%;}
+    }
+
+    [class*="col-"]{
+    	float:left;
+    	padding:10px;
+    	border:2px solid white;
+    }
+.container{
+border:5px solid black;
+	 /* add this line */
+	background-color:DodgerBlue;
+	margin-right:auto;
+	margin-left:auto;
+}
+h1{
+	font-style:italic
+	text-align:right;
+	width:100%;
+	font-size:200%;
+}
+img{
+	width:20%;
+	float:center;
+}
+input{
+	text-align:center;
+	width:150px;
+}
+</style>
+</head>
+<body>
+	<center>
+	<script type="text/javascript">
+function changeimgover(id)
+{
+	id.src="mail2.png";
+}
+function changeimgout(id)
+{
+	id.src="mail1.png";
+}
+function callAlert()
+	{alert("Thank you Friend or Family or other people. If you look at this, maybe you know me. Or professor. It was very short time but thank you for teaching me and for hanging out with me. Of course, to others. It's a short article, thank you for reading.")}
+
+function randomtext()
+	{
+		var t=Math.floor(Math.random()*2+1);
+		if(t==1)
+		{
+			document.getElementById("h1").innerHTML="Friend or Family";
+		}
+		else
+		{
+			document.getElementById("h1").innerHTML="Others";
+		}
+    }
+	</script>
+	<div class="container">
+	<h1> Dear <p id="h1"> </p> <button onclick="randomtext()"> Click </button> </h1><br><br>
+<img src="mail1.png" onmouseover="changeimgover(this)" onmouseout="changeimgout(this)" onclick="callAlert(this)">
+<h2>Mouse over this Mail, and Click it </h2><br><br><br>
+	<h1>For Park Gyu Tae</h1>
+	</div>
+</center>
+	</body>
+</html>
